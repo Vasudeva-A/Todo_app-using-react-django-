@@ -1,0 +1,5 @@
+backend\todo_app\__pycache__
+backend\todo_app\__init__.py
+backend\db.sqlite3
+backend\env
+frontend\node_modules
