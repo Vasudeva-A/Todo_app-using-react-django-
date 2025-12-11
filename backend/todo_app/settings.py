@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r_&0k&1@o(cnum376t7uo=-k22_$0!mopat=cz!i@x8t+abzh^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,7 +53,9 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = [
+    "https://todo-tasks-app01.netlify.app",
+]
 
 ROOT_URLCONF = 'todo_app.urls'
 
